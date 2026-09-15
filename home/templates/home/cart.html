@@ -1,0 +1,264 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cart | Cherish By Wed Knot Craft</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'home/css/style.css' %}"
+    >
+</head>
+
+<body>
+
+    <header class="simple-page-header">
+
+        <a href="{% url 'home' %}">
+            <img
+                src="/media/images/plant_theme.png"
+                alt="Wedding Card"
+            >
+        </a>
+
+    </header>
+
+
+    <main class="cart-page">
+
+        <div class="page-heading">
+
+            <h1>
+                Shopping Cart
+            </h1>
+
+            <p>
+                Review your selected wedding cards
+            </p>
+
+        </div>
+
+
+        <div class="cart-table">
+
+            <div class="cart-head">
+
+                <span>Product</span>
+                <span>Qty</span>
+                <span>Unit Price</span>
+                <span>Tax</span>
+                <span>Price</span>
+
+            </div>
+
+
+            <div id="cartContainer"></div>
+
+
+            <div class="cart-summary">
+
+                <div>
+                    <span>Sub Total</span>
+                    <strong id="subtotal">Rs.0.00</strong>
+                </div>
+
+                <div>
+                    <span>Total Tax</span>
+                    <strong id="tax">Rs.0.00</strong>
+                </div>
+
+                <div class="grand-total">
+                    <span>Total</span>
+                    <strong id="total">Rs.0.00</strong>
+                </div>
+
+            </div>
+
+
+            <div class="minimum-order">
+
+                TO CHECKOUT PLEASE ADD MINIMUM
+                100 ITEMS TO THE CART
+
+            </div>
+
+
+            <div class="cart-footer">
+
+                <a
+                    href="{% url 'home' %}"
+                    class="continue-shopping"
+                >
+                    Continue Shopping
+                </a>
+
+                <button
+                    type="button"
+                    class="checkout-button"
+                    id="checkoutButton"
+                >
+                    Checkout
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        const cart =
+            JSON.parse(
+                localStorage.getItem("weddingCart") || "[]"
+            );
+
+
+        const container =
+            document.getElementById("cartContainer");
+
+
+        let subtotal = 0;
+
+
+        if (cart.length === 0) {
+
+            container.innerHTML = `
+                <div class="empty-state">
+                    <h2>Your cart is empty</h2>
+
+                    <p>
+                        Choose your favourite wedding cards.
+                    </p>
+
+                    <a href="{% url 'home' %}">
+                        Continue Shopping
+                    </a>
+                </div>
+            `;
+
+        } else {
+
+            cart.forEach(function(item) {
+
+                const qty =
+                    Number(item.qty || 1);
+
+                const price =
+                    Number(item.price || 0);
+
+                const amount =
+                    qty * price;
+
+                subtotal += amount;
+
+
+                const row =
+                    document.createElement("div");
+
+                row.className =
+                    "cart-row";
+
+
+                row.innerHTML = `
+
+                    <div class="cart-product">
+
+                        <img
+                            src="${item.image}"
+                            alt="${item.name}"
+                        >
+
+                        <strong>
+                            ${item.name}
+                        </strong>
+
+                    </div>
+
+                    <span>
+                        ${qty}
+                    </span>
+
+                    <span>
+                        Rs.${price.toFixed(2)}
+                    </span>
+
+                    <span>
+                        18%
+                    </span>
+
+                    <span>
+                        Rs.${amount.toFixed(2)}
+                    </span>
+
+                `;
+
+
+                container.appendChild(row);
+
+            });
+
+        }
+
+
+        const totalTax =
+            subtotal * 0.18;
+
+
+        const grandTotal =
+            subtotal + totalTax;
+
+
+        document.getElementById("subtotal")
+            .textContent =
+            "Rs." + subtotal.toFixed(2);
+
+
+        document.getElementById("tax")
+            .textContent =
+            "Rs." + totalTax.toFixed(2);
+
+
+        document.getElementById("total")
+            .textContent =
+            "Rs." + grandTotal.toFixed(2);
+
+
+        document
+            .getElementById("checkoutButton")
+            .addEventListener(
+                "click",
+                function() {
+
+                    if (cart.length === 0) {
+
+                        alert(
+                            "Your cart is empty."
+                        );
+
+                        return;
+
+                    }
+
+                    alert(
+                        "Checkout is ready."
+                    );
+
+                }
+            );
+
+    </script>
+
+</body>
+
+</html>

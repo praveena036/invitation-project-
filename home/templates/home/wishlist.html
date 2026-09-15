@@ -1,0 +1,144 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Wishlist | Wedding Card</title>
+
+    <link
+        rel="stylesheet"
+        href="{% static 'home/css/style.css' %}"
+    >
+
+</head>
+
+
+<body class="inner-page">
+
+
+<header class="simple-nav">
+
+    <a href="{% url 'home' %}">
+        Home
+    </a>
+
+    <a href="{% url 'wishlist' %}">
+        Wishlist
+    </a>
+
+    <a href="{% url 'cart' %}">
+        Cart
+    </a>
+
+</header>
+
+
+<main class="inner-content">
+
+    <div class="page-heading">
+
+        <h1>
+            My Wishlist
+        </h1>
+
+        <p>
+            Your favourite wedding invitations
+        </p>
+
+    </div>
+
+
+    <div
+        id="wishlistContainer"
+        class="wishlist-grid"
+    >
+
+    </div>
+
+</main>
+
+
+<script>
+
+    const wishlist =
+        JSON.parse(
+            localStorage.getItem(
+                "weddingWishlist"
+            ) || "[]"
+        );
+
+
+    const container =
+        document.getElementById(
+            "wishlistContainer"
+        );
+
+
+    if (wishlist.length === 0) {
+
+        container.innerHTML = `
+            <div class="empty-state">
+                <h2>Your wishlist is empty</h2>
+                <p>Add your favourite wedding cards here.</p>
+                <a href="{% url 'home' %}">
+                    Explore Wedding Cards
+                </a>
+            </div>
+        `;
+
+    } else {
+
+        wishlist.forEach(
+            function (item) {
+
+                const card =
+                    document.createElement("article");
+
+                card.className =
+                    "wishlist-item";
+
+
+                card.innerHTML = `
+
+                    <img
+                        src="${item.image}"
+                        alt="${item.name}"
+                    >
+
+                    <div>
+
+                        <h3>
+                            ${item.name}
+                        </h3>
+
+                        <p>
+                            ${item.price}
+                        </p>
+
+                    </div>
+
+                `;
+
+
+                container.appendChild(card);
+
+            }
+        );
+
+    }
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,5342 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cherish By Wed Knot Craft</title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- CSS -->
+
+    <link
+        rel="stylesheet"
+        href="{% static 'home/css/style.css' %}"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                         HEADER
+===================================================== -->
+
+<header class="top-header">
+
+    <div class="header-inner">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="#home"
+            class="brand"
+            id="homeLogo"
+        >
+
+            <img
+                src="/media/images/plant_theme.png"
+                alt="Cherish By Wed Knot Craft"
+            >
+
+
+            <div class="brand-name">
+
+                <span>Cherish</span>
+
+                <span>By</span>
+
+                <span>Wed Knot Craft</span>
+
+            </div>
+
+        </a>
+
+
+        <!-- SEARCH -->
+
+        <div class="search-wrapper">
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search..."
+                autocomplete="off"
+            >
+
+
+            <button
+                type="button"
+                id="searchBtn"
+                aria-label="Search"
+            >
+                ⌕
+            </button>
+
+        </div>
+
+
+        <!-- HEADER ACTIONS -->
+
+        <div class="header-actions">
+
+            <button
+                type="button"
+                class="header-icon"
+                id="accountBtn"
+                aria-label="Account"
+                title="Account"
+            >
+                ♙
+            </button>
+
+
+            <button
+                type="button"
+                class="header-icon"
+                id="wishlistBtn"
+                aria-label="Wishlist"
+                title="Wishlist"
+            >
+                ♡
+            </button>
+
+
+            <button
+                type="button"
+                class="header-icon cart-icon"
+                id="cartBtn"
+                aria-label="Cart"
+                title="Cart"
+            >
+
+                🛒
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+            <button
+                type="button"
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+                         MAIN NAVBAR
+===================================================== -->
+
+<nav class="main-nav">
+
+    <div class="nav-inner">
+
+
+        <!-- HOME -->
+
+        <a
+            href="#home"
+            class="nav-link active"
+        >
+            Home
+        </a>
+
+
+        <!-- WEDDING -->
+
+        <a
+            href="#wedding"
+            class="nav-link"
+            data-view="wedding"
+        >
+            Wedding Invitation
+        </a>
+
+
+        <!-- SPECIAL -->
+
+        <a
+            href="#special"
+            class="nav-link"
+        >
+            Special occasions
+        </a>
+
+
+        <!-- =================================================
+                         THEME CARDS
+        ================================================== -->
+
+        <div
+            class="nav-dropdown-wrapper theme-dropdown-wrapper"
+        >
+
+            <button
+                type="button"
+                class="nav-link theme-dropdown-btn"
+                id="themeCardsBtn"
+            >
+                Theme Cards
+
+                <span class="dropdown-arrow">
+                    ⌄
+                </span>
+
+            </button>
+
+
+            <div
+                class="theme-menu"
+                id="themeMenu"
+            >
+
+
+                <button
+                    type="button"
+                    class="theme-item"
+                    data-theme="beach"
+                >
+
+                    <span class="theme-item-image">
+
+                        <img
+                            src="/media/images/Beach_Wedding.png"
+                            alt="Beach Theme Cards"
+                        >
+
+                    </span>
+
+
+                    <span class="theme-item-content">
+
+                        <strong>
+                            Beach Theme Cards
+                        </strong>
+
+                        <small>
+                            Fresh &amp; romantic seaside designs
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="theme-item"
+                    data-theme="bride"
+                >
+
+                    <span class="theme-item-image">
+
+                        <img
+                            src="/media/images/Elegant_Flora.png"
+                            alt="Bride Theme Cards"
+                        >
+
+                    </span>
+
+
+                    <span class="theme-item-content">
+
+                        <strong>
+                            Bride Theme Cards
+                        </strong>
+
+                        <small>
+                            Elegant bridal invitation styles
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="theme-item"
+                    data-theme="box"
+                >
+
+                    <span class="theme-item-image">
+
+                        <img
+                            src="/media/images/Gate_fold.png"
+                            alt="Box Cards"
+                        >
+
+                    </span>
+
+
+                    <span class="theme-item-content">
+
+                        <strong>
+                            Box Cards
+                        </strong>
+
+                        <small>
+                            Premium luxury box-style cards
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="theme-item"
+                    data-theme="single"
+                >
+
+                    <span class="theme-item-image">
+
+                        <img
+                            src="/media/images/Minimal_Blue.png"
+                            alt="Single Sheet Cards"
+                        >
+
+                    </span>
+
+
+                    <span class="theme-item-content">
+
+                        <strong>
+                            Single Sheet Cards
+                        </strong>
+
+                        <small>
+                            Minimal &amp; stylish single-sheet designs
+                        </small>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+                         SCROLL INVITATION
+        ================================================== -->
+
+        <div
+            class="nav-dropdown-wrapper scroll-dropdown-wrapper"
+        >
+
+            <button
+                type="button"
+                class="nav-link scroll-dropdown-btn"
+                id="scrollInvitationBtn"
+            >
+
+                Scroll Invitation
+
+                <span class="dropdown-arrow">
+                    ⌄
+                </span>
+
+            </button>
+
+
+            <div
+                class="scroll-menu"
+                id="scrollInvitationMenu"
+            >
+
+
+                <button
+                    type="button"
+                    class="scroll-item"
+                    data-scroll-type="small"
+                >
+
+                    <span class="scroll-item-image">
+
+                        <img
+                            src="/media/images/Wedding_card.png"
+                            alt="Small Size Scroll"
+                        >
+
+                    </span>
+
+
+                    <span class="scroll-item-content">
+
+                        <strong>
+                            Small Size Scroll
+                        </strong>
+
+                        <small>
+                            Compact &amp; elegant scroll designs
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="scroll-item"
+                    data-scroll-type="box"
+                >
+
+                    <span class="scroll-item-image">
+
+                        <img
+                            src="/media/images/Gate_fold.png"
+                            alt="Box Scroll"
+                        >
+
+                    </span>
+
+
+                    <span class="scroll-item-content">
+
+                        <strong>
+                            Box Scroll
+                        </strong>
+
+                        <small>
+                            Luxury box-style invitations
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="scroll-item"
+                    data-scroll-type="only"
+                >
+
+                    <span class="scroll-item-image">
+
+                        <img
+                            src="/media/images/Elegant_Vintage.png"
+                            alt="Only Scroll"
+                        >
+
+                    </span>
+
+
+                    <span class="scroll-item-content">
+
+                        <strong>
+                            Only Scroll
+                        </strong>
+
+                        <small>
+                            Traditional classic scroll designs
+                        </small>
+
+                    </span>
+
+                </button>
+
+
+
+                <button
+                    type="button"
+                    class="scroll-item"
+                    data-scroll-type="high"
+                >
+
+                    <span class="scroll-item-image">
+
+                        <img
+                            src="/media/images/Royal_Wedding.png"
+                            alt="High End Scroll"
+                        >
+
+                    </span>
+
+
+                    <span class="scroll-item-content">
+
+                        <strong>
+                            High End Scroll
+                        </strong>
+
+                        <small>
+                            Premium grand wedding designs
+                        </small>
+
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+                       DIGITAL INVITATION
+        ================================================== -->
+
+        <div
+            class="nav-dropdown-wrapper digital-dropdown-wrapper"
+        >
+
+            <button
+                type="button"
+                class="nav-link digital-dropdown-btn"
+                id="digitalInvitationBtn"
+            >
+
+                Digital Invitation
+
+                <span class="dropdown-arrow">
+                    ⌄
+                </span>
+
+            </button>
+
+
+            <div
+                class="digital-menu"
+                id="digitalInvitationMenu"
+            >
+
+
+                <!-- WHATSAPP -->
+
+                <button
+                    type="button"
+                    class="digital-item"
+                    data-digital-type="whatsapp"
+                >
+
+                    <span
+                        class="digital-item-image whatsapp-art"
+                    >
+                        <span class="art-symbol">
+                            ◉
+                        </span>
+
+                        <span>
+                            WHATSAPP
+                        </span>
+                    </span>
+
+
+                    <span class="digital-item-content">
+
+                        <strong>
+                            Whatsapp Cards
+                        </strong>
+
+                        <small>
+                            Beautiful invites made for sharing
+                        </small>
+
+                    </span>
+
+
+                    <span class="digital-item-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- SAVE THE DATE -->
+
+                <button
+                    type="button"
+                    class="digital-item"
+                    data-digital-type="save"
+                >
+
+                    <span
+                        class="digital-item-image save-art"
+                    >
+
+                        <span class="art-symbol">
+                            ♡
+                        </span>
+
+                        <span>
+                            SAVE DATE
+                        </span>
+
+                    </span>
+
+
+                    <span class="digital-item-content">
+
+                        <strong>
+                            Save the Date Cards
+                        </strong>
+
+                        <small>
+                            Elegant announcement designs
+                        </small>
+
+                    </span>
+
+
+                    <span class="digital-item-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- ANIMATED -->
+
+                <button
+                    type="button"
+                    class="digital-item"
+                    data-digital-type="animated"
+                >
+
+                    <span
+                        class="digital-item-image animated-art"
+                    >
+
+                        <span class="art-symbol">
+                            ▶
+                        </span>
+
+                        <span>
+                            ANIMATED
+                        </span>
+
+                    </span>
+
+
+                    <span class="digital-item-content">
+
+                        <strong>
+                            Animated Wedding Cards
+                        </strong>
+
+                        <small>
+                            Bring your wedding story to life
+                        </small>
+
+                    </span>
+
+
+                    <span class="digital-item-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- EVENT -->
+
+                <button
+                    type="button"
+                    class="digital-item"
+                    data-digital-type="event"
+                >
+
+                    <span
+                        class="digital-item-image event-art"
+                    >
+
+                        <span class="art-symbol">
+                            ✦
+                        </span>
+
+                        <span>
+                            E-INVITE
+                        </span>
+
+                    </span>
+
+
+                    <span class="digital-item-content">
+
+                        <strong>
+                            Event E-Invites
+                        </strong>
+
+                        <small>
+                            Modern invites for every occasion
+                        </small>
+
+                    </span>
+
+
+                    <span class="digital-item-arrow">
+                        →
+                    </span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+                       MOBILE NAV
+===================================================== -->
+
+<div
+    class="mobile-nav"
+    id="mobileNav"
+>
+
+    <a href="#home">
+        Home
+    </a>
+
+
+    <a
+        href="#wedding"
+        data-view="wedding"
+    >
+        Wedding Invitation
+    </a>
+
+
+    <a href="#special">
+        Special occasions
+    </a>
+
+
+    <a href="#themes">
+        Theme Cards
+    </a>
+
+
+    <a href="#scroll">
+        Scroll Invitation
+    </a>
+
+
+    <a href="#digital">
+        Digital Invitation
+    </a>
+
+</div>
+
+
+
+<!-- =====================================================
+                          MAIN
+===================================================== -->
+
+<main>
+
+
+
+<!-- =====================================================
+                           HOME VIEW
+===================================================== -->
+
+<section
+    class="page-view"
+    id="homeView"
+>
+
+
+    <!-- HERO -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+        <div class="hero-content">
+
+            <p class="hero-label">
+                CREATE • CELEBRATE • REMEMBER
+            </p>
+
+
+            <h1>
+                Your Love Story
+                <span>
+                    Begins Here
+                </span>
+            </h1>
+
+
+            <p class="hero-description">
+
+                Create stunning wedding invitations that capture
+                the essence of your special day. Elegant designs,
+                heartfelt words, and everything you need to make
+                your first impression unforgettable.
+
+            </p>
+
+
+            <button
+                type="button"
+                class="primary-btn"
+                id="exploreBtn"
+            >
+                Get your style
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURED -->
+
+    <section
+        class="featured-section"
+        id="invitation"
+    >
+
+        <div class="featured-slider">
+
+            <button
+                type="button"
+                class="slider-btn"
+                id="prevBtn"
+            >
+                ‹
+            </button>
+
+
+            <div class="featured-image-wrap">
+
+                <img
+                    id="featuredImage"
+                    src="/media/images/BC_1152_Floral.png"
+                    alt="Featured Wedding Invitation"
+                >
+
+            </div>
+
+
+            <button
+                type="button"
+                class="slider-btn"
+                id="nextBtn"
+            >
+                ›
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- UNIQUE COLLECTION -->
+
+    <section class="section">
+
+        <div class="section-title reveal">
+
+            <h2>
+                Unique &amp; Exclusive Invitation Cards
+            </h2>
+
+            <p>
+                Because each wedding is truly unique and memorable
+            </p>
+
+        </div>
+
+
+        <div class="three-grid">
+
+
+            <article class="category-card reveal">
+
+                <div class="category-image">
+
+                    <img
+                        src="/media/images/Elegant_Hindu.png"
+                        alt="Hindu Wedding Cards"
+                    >
+
+                </div>
+
+                <h3>
+                    Hindu Wedding Cards
+                </h3>
+
+            </article>
+
+
+            <article class="category-card reveal">
+
+                <div class="category-image">
+
+                    <img
+                        src="/media/images/Elegant_Kerala.png"
+                        alt="Luxury Cards"
+                    >
+
+                </div>
+
+                <h3>
+                    Luxury Cards
+                </h3>
+
+            </article>
+
+
+            <article class="category-card reveal">
+
+                <div class="category-image">
+
+                    <img
+                        src="/media/images/Dark_green.png"
+                        alt="Floral Wedding Cards"
+                    >
+
+                </div>
+
+                <h3>
+                    Floral Wedding Cards
+                </h3>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- THEMES -->
+
+    <section
+        class="section"
+        id="themes"
+    >
+
+        <div class="section-title reveal">
+
+            <h2>
+                Theme Based Invitation
+            </h2>
+
+            <p>
+                Theme Based Invitation
+            </p>
+
+        </div>
+
+
+        <div class="three-grid">
+
+
+            <article class="category-card reveal">
+
+                <div class="category-image">
+
+                    <img
+                        src="/media/images/Beach_Wedding.png"
+                        alt="Beach Theme Cards"
+                    >
+
+                </div>
+
+                <h3>
+                    Beach Theme Cards
+                </h3>
+
+            </article>
+
+
+            <article class="category-card reveal">
+
+                <div class="category-image">
+
+                    <img
+                        src="/media/images/buterflies.png"
+                        alt="Birds Theme Cards"
+                    >
+
+                </div>
+
+                <h3>
+                    Birds Theme Cards
+                </h3>
+
+            </article>
+
+
+            <article class="category-card reveal">
+
+                <div class="category-image">
+
+                    <img
+                        src="/media/images/Elegant_Flora.png"
+                        alt="Palace Theme Cards"
+                    >
+
+                </div>
+
+                <h3>
+                    Palace Theme Cards
+                </h3>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SCROLL / DIGITAL -->
+
+    <section
+        class="promo-section"
+        id="scroll"
+    >
+
+
+        <article class="promo-card reveal">
+
+            <img
+                src="/media/images/brown.png"
+                alt="Scroll Invitations"
+            >
+
+
+            <div class="promo-content">
+
+                <h2>
+                    Scroll Invitations
+                </h2>
+
+                <p>
+                    Beautiful traditional scroll invitations
+                    designed specially for your big day.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                >
+                    View Designs
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article class="promo-card reveal">
+
+            <img
+                src="/media/images/cafe.png"
+                alt="Digital Invitations"
+            >
+
+
+            <div class="promo-content">
+
+                <h2>
+                    Digital Invitations
+                </h2>
+
+                <p>
+                    Modern and elegant digital invitations
+                    for unforgettable celebrations.
+                </p>
+
+
+                <button
+                    type="button"
+                    class="secondary-btn"
+                >
+                    Explore Now
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+
+    <!-- PRODUCTS -->
+
+    <section
+        class="section"
+        id="weddingProducts"
+    >
+
+        <div class="section-title reveal">
+
+            <h2>
+                Simple and Affordable Wedding Cards
+            </h2>
+
+            <p>
+                Beautiful designs at prices you'll love
+            </p>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            <!-- PRODUCT 1 -->
+
+            <article
+                class="product-card reveal"
+                data-name="Elegant Indian Wedding Card"
+                data-price="125"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="/media/images/Editable_Indian.png"
+                        alt="Elegant Indian Wedding Card"
+                    >
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <h3>
+                        Elegant Indian Wedding Card
+                    </h3>
+
+                    <p>
+                        Traditional design with modern elegance.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs.125
+                        </strong>
+
+
+                        <div class="product-actions">
+
+                            <button
+                                type="button"
+                                class="heart-btn"
+                            >
+                                ♡
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="cart-add"
+                            >
+                                🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 2 -->
+
+            <article
+                class="product-card reveal"
+                data-name="Simple Traditional Card"
+                data-price="250"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="/media/images/Astound_1.jpg"
+                        alt="Simple Traditional Card"
+                    >
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <h3>
+                        Simple Traditional Card
+                    </h3>
+
+                    <p>
+                        Minimal and beautiful wedding invitation.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs.250
+                        </strong>
+
+
+                        <div class="product-actions">
+
+                            <button
+                                type="button"
+                                class="heart-btn"
+                            >
+                                ♡
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="cart-add"
+                            >
+                                🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 3 -->
+
+            <article
+                class="product-card reveal"
+                data-name="Red Velvet Wedding Card"
+                data-price="300"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="/media/images/Doli_Themed.png"
+                        alt="Red Velvet Wedding Card"
+                    >
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <h3>
+                        Red Velvet Wedding Card
+                    </h3>
+
+                    <p>
+                        Premium traditional wedding invitation.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs.300
+                        </strong>
+
+
+                        <div class="product-actions">
+
+                            <button
+                                type="button"
+                                class="heart-btn"
+                            >
+                                ♡
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="cart-add"
+                            >
+                                🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 4 -->
+
+            <article
+                class="product-card reveal"
+                data-name="Floral Classic Card"
+                data-price="175"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="/media/images/BC_1152_Floral.png"
+                        alt="Floral Classic Card"
+                    >
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <h3>
+                        Floral Classic Card
+                    </h3>
+
+                    <p>
+                        Elegant floral invitation design.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs.175
+                        </strong>
+
+
+                        <div class="product-actions">
+
+                            <button
+                                type="button"
+                                class="heart-btn"
+                            >
+                                ♡
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="cart-add"
+                            >
+                                🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 5 -->
+
+            <article
+                class="product-card reveal"
+                data-name="Elegant Flora"
+                data-price="225"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="/media/images/Elegant_Flora.png"
+                        alt="Elegant Flora"
+                    >
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <h3>
+                        Elegant Flora
+                    </h3>
+
+                    <p>
+                        Soft floral design for modern weddings.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs.225
+                        </strong>
+
+
+                        <div class="product-actions">
+
+                            <button
+                                type="button"
+                                class="heart-btn"
+                            >
+                                ♡
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="cart-add"
+                            >
+                                🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRODUCT 6 -->
+
+            <article
+                class="product-card reveal"
+                data-name="Luxury Dark Green"
+                data-price="350"
+            >
+
+                <div class="product-image">
+
+                    <img
+                        src="/media/images/Dark_green.png"
+                        alt="Luxury Dark Green"
+                    >
+
+                </div>
+
+
+                <div class="product-content">
+
+                    <h3>
+                        Luxury Dark Green
+                    </h3>
+
+                    <p>
+                        Premium luxury invitation collection.
+                    </p>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs.350
+                        </strong>
+
+
+                        <div class="product-actions">
+
+                            <button
+                                type="button"
+                                class="heart-btn"
+                            >
+                                ♡
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="cart-add"
+                            >
+                                🛒
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SUMMER -->
+
+    <section
+        class="summer-section"
+    >
+
+        <div class="summer-overlay"></div>
+
+
+        <div class="summer-inner reveal">
+
+            <div class="summer-title">
+
+                <p>
+                    Special Offer
+                </p>
+
+                <h2>
+                    Summer
+                </h2>
+
+                <h3>
+                    Wedding Collection
+                </h3>
+
+            </div>
+
+
+            <div class="summer-list">
+
+                <p>
+                    100 cards – 10% off
+                </p>
+
+                <p>
+                    200 cards – 15% off
+                </p>
+
+                <p>
+                    300 cards – 20% off
+                </p>
+
+                <p>
+                    400 cards – 25% off
+                </p>
+
+                <p>
+                    500 cards – 30% off
+                </p>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="primary-btn"
+            >
+                View Collection
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DIGITAL / COLLECTION -->
+
+    <section
+        class="section"
+        id="digital"
+    >
+
+        <div class="section-title reveal">
+
+            <h2>
+                Wedding Collections
+            </h2>
+
+            <p>
+                Find the perfect invitation for your special day
+            </p>
+
+        </div>
+
+
+        <div class="collection-grid">
+
+
+            <article class="collection-card reveal">
+
+                <img
+                    src="/media/images/Digital_Indian_Hin.png"
+                    alt="Indian Wedding Collection"
+                >
+
+                <h3>
+                    Indian Wedding Collection
+                </h3>
+
+                <button
+                    type="button"
+                    class="buy-btn"
+                >
+                    Buy Now
+                </button>
+
+            </article>
+
+
+
+            <article class="collection-card reveal">
+
+                <img
+                    src="/media/images/Beach_Wedding.png"
+                    alt="Christian Wedding Collection"
+                >
+
+                <h3>
+                    Christian Wedding Collection
+                </h3>
+
+                <button
+                    type="button"
+                    class="buy-btn"
+                >
+                    Buy Now
+                </button>
+
+            </article>
+
+
+
+            <article class="collection-card reveal">
+
+                <img
+                    src="/media/images/Editable_Indian.png"
+                    alt="Muslim Wedding Collection"
+                >
+
+                <h3>
+                    Muslim Wedding Collection
+                </h3>
+
+                <button
+                    type="button"
+                    class="buy-btn"
+                >
+                    Buy Now
+                </button>
+
+            </article>
+
+
+
+            <article class="collection-card reveal">
+
+                <img
+                    src="/media/images/Elegant_Hindu.png"
+                    alt="Traditional Wedding Collection"
+                >
+
+                <h3>
+                    Traditional Wedding Collection
+                </h3>
+
+                <button
+                    type="button"
+                    class="buy-btn"
+                >
+                    Buy Now
+                </button>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TESTIMONIALS -->
+
+    <section class="testimonial-section">
+
+        <div class="section-title reveal">
+
+            <h2>
+                WHAT CLIENT SAY ABOUT US
+            </h2>
+
+        </div>
+
+
+        <div class="testimonial-grid">
+
+
+            <article class="testimonial-card reveal">
+
+                <div class="avatar">
+                    J
+                </div>
+
+                <h3>
+                    James
+                </h3>
+
+                <p>
+                    Absolutely beautiful invitation.
+                    We were very happy with the quality
+                    and elegant design.
+                </p>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+            </article>
+
+
+
+            <article class="testimonial-card reveal">
+
+                <div class="avatar">
+                    H
+                </div>
+
+                <h3>
+                    Haritha
+                </h3>
+
+                <p>
+                    Wonderful service and beautiful
+                    designs. Everything looked perfect
+                    for our wedding.
+                </p>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+            </article>
+
+
+
+            <article class="testimonial-card reveal">
+
+                <div class="avatar">
+                    S
+                </div>
+
+                <h3>
+                    Santhosh
+                </h3>
+
+                <p>
+                    Great quality at a great price.
+                    The invitation looked even better
+                    than expected.
+                </p>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- HOW IT WORKS -->
+
+    <section class="how-section">
+
+        <div class="section-title reveal">
+
+            <h2>
+                How It Works
+            </h2>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+
+            <div class="step reveal">
+
+                <div class="step-icon">
+                    📝
+                </div>
+
+                <h3>
+                    Choose a design
+                </h3>
+
+            </div>
+
+
+            <div class="step reveal">
+
+                <div class="step-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Add your details
+                </h3>
+
+            </div>
+
+
+            <div class="step reveal">
+
+                <div class="step-icon">
+                    💌
+                </div>
+
+                <h3>
+                    Approve &amp; Download
+                </h3>
+
+            </div>
+
+
+            <div class="step reveal">
+
+                <div class="step-icon">
+                    📦
+                </div>
+
+                <h3>
+                    Place your order
+                </h3>
+
+            </div>
+
+
+            <div class="step reveal">
+
+                <div class="step-icon">
+                    🚚
+                </div>
+
+                <h3>
+                    Get it delivered
+                </h3>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+                           HOME FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <img
+                    src="/media/images/plant_theme.png"
+                    alt="Wedding Card"
+                >
+
+                <h3>
+                    Cherish By Wed Knot Craft
+                </h3>
+
+                <p>
+                    Elegant wedding invitations made
+                    for beautiful memories.
+                </p>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+
+                <a
+                    href="#about"
+                    id="aboutUsLink"
+                >
+                    About us
+                </a>
+
+
+                <a href="#invitation">
+                    Services
+                </a>
+
+
+                <a href="#wedding">
+                    Wedding Cards
+                </a>
+
+
+                <a href="#themes">
+                    Themes
+                </a>
+
+
+                <!-- IMPORTANT -->
+
+                <a
+                    href="#contact"
+                    id="footerContactLink"
+                >
+                    Contact Us
+                </a>
+
+            </div>
+
+
+            <!-- QUICK ACCESS -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Access
+                </h3>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#wedding">
+                    Wedding Cards
+                </a>
+
+
+                <a href="#themes">
+                    Theme Cards
+                </a>
+
+
+                <a href="#digital">
+                    Digital Invitation
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+
+                <p>
+                    ✉ weddingcard@gmail.com
+                </p>
+
+
+                <p>
+                    📍 Tamil Nadu, India
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Wedding Card.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</section>
+
+
+
+
+<!-- =====================================================
+                    WEDDING VIEW
+===================================================== -->
+
+<section
+    class="page-view wedding-page-view"
+    id="weddingView"
+>
+
+
+    <div class="wedding-page-heading">
+
+        <p class="wedding-kicker">
+            CREATE • CELEBRATE • REMEMBER
+        </p>
+
+
+        <h1>
+            WEDDING CARDS
+        </h1>
+
+
+        <div class="wedding-title-line"></div>
+
+    </div>
+
+
+    <div class="wedding-card-grid">
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Elegant_Kerala.png"
+                alt="Hindu Wedding Cards"
+            >
+
+            <h3>
+                Hindu Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Elegant_Flora.png"
+                alt="Christian Wedding Cards"
+            >
+
+            <h3>
+                Christian Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Floral_Indian.png"
+                alt="Muslim Wedding Cards"
+            >
+
+            <h3>
+                Muslim Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Emerald_Green.png"
+                alt="Sikh Wedding Cards"
+            >
+
+            <h3>
+                Sikh Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/yellow.png"
+                alt="Interfaith Wedding Cards"
+            >
+
+            <h3>
+                Interfaith Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/engaement.png"
+                alt="Exclusive Wedding Cards"
+            >
+
+            <h3>
+                Exclusive Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Indian_Hindu.png"
+                alt="Traditional Wedding Cards"
+            >
+
+            <h3>
+                Traditional Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Indian_Wedding.png"
+                alt="All Wedding Cards"
+            >
+
+            <h3>
+                All Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/RP.png"
+                alt="New Style Wedding Cards"
+            >
+
+            <h3>
+                New Style Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Dark_green.png"
+                alt="Envelope Wedding Cards"
+            >
+
+            <h3>
+                Envelope Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/new.png"
+                alt="Elegant Faith Wedding Cards"
+            >
+
+            <h3>
+                Elegant faith Wedding Cards
+            </h3>
+
+        </article>
+
+
+        <article class="wedding-category-card">
+
+            <img
+                src="/media/images/Nepali_Wedding.png"
+                alt="Nepali Wedding Cards"
+            >
+
+            <h3>
+                Nepali Wedding Cards
+            </h3>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- WEDDING FOOTER -->
+
+    <footer class="wedding-footer">
+
+        <div class="wedding-footer-inner">
+
+
+            <div class="wedding-footer-brand">
+
+                <img
+                    src="/media/images/plant_theme.png"
+                    alt="Wed Knot Craft"
+                >
+
+                <h3>
+                    Largest Wedding
+                    <br>
+                    Cards Collections in
+                    <br>
+                    Chennai
+                </h3>
+
+
+                <div class="social-row">
+
+                    <span>
+                        Follow us with
+                    </span>
+
+                    <span>◎</span>
+
+                    <span>f</span>
+
+                    <span>▶</span>
+
+                    <span>◉</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+
+                <a href="#about">
+                    About Us
+                </a>
+
+
+                <a
+                    href="#contact"
+                    id="weddingFooterContact"
+                >
+                    Contact Us
+                </a>
+
+
+                <a href="#">
+                    FAQ
+                </a>
+
+
+                <a href="#how-order" class="how-order-link">
+    How to order wedding invitation online?
+</a>
+            </div>
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Quick Access
+                </h3>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#wedding">
+                    Wedding Cards
+                </a>
+
+
+                <a href="#wedding">
+                    Hindu Wedding Cards
+                </a>
+
+            </div>
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+
+                <p>
+                    ☎ +91 9876543210
+                </p>
+
+
+                <p>
+                    ✉ wedtype@weddingcards.com
+                </p>
+
+
+                <p>
+                    Operating hours:
+                    10.00Am to 10.00Pm
+                </p>
+
+
+                <strong>
+                    Monday – Sunday
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="wedding-copyright">
+
+            © Wed knot craft India Private Limited.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</section>
+
+
+
+
+<!-- =====================================================
+                       ABOUT US VIEW
+===================================================== -->
+
+<section
+    class="page-view about-page-view"
+    id="aboutView"
+>
+
+
+    <div class="about-page-heading">
+
+        <h1>
+            ABOUT US
+        </h1>
+
+    </div>
+
+
+
+    <!-- INTRO -->
+
+    <section
+        class="about-intro about-reveal"
+    >
+
+        <div class="about-text">
+
+            <h2>
+                Celebrating Love, One Invitation at a Time
+            </h2>
+
+
+            <p>
+                At Wed Knot Craft, we believe that every love
+                story is unique and deserves to be celebrated in
+                a way that reflects its individuality.
+            </p>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <img
+                src="/media/images/wedding album.png"
+                alt="Wedding Album"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STORY -->
+
+    <section
+        class="about-story about-reveal"
+    >
+
+        <div class="about-image">
+
+            <img
+                src="/media/images/love story.png"
+                alt="Love Story"
+            >
+
+        </div>
+
+
+        <div class="about-text">
+
+            <h2>
+                OUR STORY
+            </h2>
+
+
+            <p>
+                What started as a passion for design has
+                blossomed into a full-fledged business
+                dedicated to bringing couples' visions to life.
+                Our founder, [Founder's Name], envisioned a
+                platform where couples could find invitations
+                that resonated with their personal style and
+                cultural heritage.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROMISE -->
+
+    <section
+        class="about-promise about-reveal"
+    >
+
+        <div class="about-text">
+
+            <h2>
+                OUR PROMISE
+            </h2>
+
+
+            <p>
+                We are committed to providing:
+            </p>
+
+
+            <ul>
+
+                <li>
+
+                    <strong>
+                        Custom Designs:
+                    </strong>
+
+                    Tailored invitations that reflect your
+                    unique love story.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Quality Craftsmanship:
+                    </strong>
+
+                    Invitations crafted with attention to
+                    detail and high-quality materials.
+
+                </li>
+
+
+                <li>
+
+                    <strong>
+                        Customer Satisfaction:
+                    </strong>
+
+                    A seamless experience from selection to
+                    delivery, ensuring your complete satisfaction.
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="about-image">
+
+            <img
+                src="/media/images/taj.png"
+                alt="Taj Wedding Design"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FINAL -->
+
+    <section
+        class="about-final about-reveal"
+    >
+
+        <h2>
+            JOIN Us in Celebrating Your Special Day
+        </h2>
+
+
+        <p>
+            Explore our diverse range of designs and let us
+            help you set the tone for your wedding celebration.
+            At [Your Company Name], your love story is our
+            inspiration.
+        </p>
+
+    </section>
+
+
+
+    <!-- ABOUT FOOTER -->
+
+    <footer class="wedding-footer">
+
+        <div class="wedding-footer-inner">
+
+
+            <div class="wedding-footer-brand">
+
+                <img
+                    src="/media/images/plant_theme.png"
+                    alt="Wed Knot Craft"
+                >
+
+
+                <h3>
+                    Largest Wedding
+                    <br>
+                    Cards Collections in
+                    <br>
+                    Chennai
+                </h3>
+
+
+                <div class="social-row">
+
+                    <span>
+                        Follow us with
+                    </span>
+
+                    <span>◎</span>
+
+                    <span>f</span>
+
+                    <span>▶</span>
+
+                    <span>◉</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+
+                <a
+                    href="#about"
+                    id="aboutFooterLink"
+                >
+                    About Us
+                </a>
+
+
+                <a
+                    href="#contact"
+                    id="aboutContactLink"
+                >
+                    Contact Us
+                </a>
+
+
+                <a href="#faq" class="faq-link">
+    FAQ
+</a>
+
+
+                <p>
+                    How to order wedding
+                    invitation online?
+                </p>
+
+            </div>
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Quick Access
+                </h3>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#wedding">
+                    Wedding Cards
+                </a>
+
+
+                <a href="#wedding">
+                    Hindu Wedding Cards
+                </a>
+
+            </div>
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+
+                <p>
+                    ☎ +91 9876543210
+                </p>
+
+
+                <p>
+                    ✉ wedtype@weddingcards.com
+                </p>
+
+
+                <p>
+                    Operating hours:
+                    10.00Am to 10.00Pm
+                </p>
+
+
+                <strong>
+                    Monday – Sunday
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="wedding-copyright">
+
+            © Wed knot craft India Private Limited.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</section>
+
+
+
+
+<!-- =====================================================
+                       CONTACT US VIEW
+===================================================== -->
+
+<section
+    class="page-view contact-page-view"
+    id="contactView"
+>
+
+
+    <!-- CONTACT HEADER -->
+
+    <div class="contact-page-heading">
+
+        <h1>
+            Contact Us
+        </h1>
+
+
+        <p>
+            We’d love to hear from you! Whether you have a
+            question, need help customizing your invites, or
+            just want to chat about your dream wedding
+            stationery — we’re here for you.
+        </p>
+
+    </div>
+
+
+
+    <!-- SUPPORT + PROOFING + CONTACT -->
+
+    <section class="contact-content">
+
+
+        <!-- SUPPORT -->
+
+        <div class="contact-block">
+
+            <h2>
+
+                <span
+                    class="contact-icon support-icon"
+                >
+                    24h
+                </span>
+
+
+                <u>
+                    Support
+                </u>
+
+            </h2>
+
+
+            <p>
+                India (toll free):
+            </p>
+
+
+            <p>
+                999-264-9444
+            </p>
+
+
+            <p>
+                Only Call – No WhatsApp Number
+            </p>
+
+
+            <p>
+                <u>
+                    sales@wedknotcraftinvitationcards.com
+                </u>
+            </p>
+
+        </div>
+
+
+
+        <!-- PROOFING -->
+
+        <div class="contact-block">
+
+            <h2>
+
+                <span
+                    class="contact-icon proof-icon"
+                >
+                    ✓
+                </span>
+
+
+                <u>
+                    Proofing Department
+                </u>
+
+            </h2>
+
+
+            <p>
+                Indian Standard Time (IST)
+            </p>
+
+
+            <p>
+                Mobile (9.00am to 9.00pm IST)
+                Monday to Saturday
+            </p>
+
+
+            <h3>
+                <u>
+                    HR Team
+                </u>
+            </h3>
+
+
+            <p>
+                +91 9876543210
+            </p>
+
+
+            <p>
+                hrteam@wedknotcraftinvitationcards.com
+            </p>
+
+
+            <h3>
+                <u>
+                    Customer Support Team
+                </u>
+            </h3>
+
+
+            <p>
+                +91 9876543210
+            </p>
+
+
+            <p>
+                customersupport@wedknotcraftinvitationcards.com
+            </p>
+
+        </div>
+
+
+
+        <!-- CONTACT INFO -->
+
+        <div class="contact-info-block">
+
+            <h2>
+                Contact Us
+            </h2>
+
+
+            <p>
+                Whether you’re looking for inquires, would like
+                to ask before ordering, or just want to let us
+                know how we did.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ONLINE STORE -->
+
+    <section class="online-store-section">
+
+        <h2>
+            An online Invitation Store with Worldwide Delivery
+        </h2>
+
+
+        <div class="online-store-content">
+
+
+            <p>
+                Weddings are always special but the fact about
+                Wedknotcraft wedding Cards is that they are
+                bespoke and exquisite in design that wins the
+                hearts of millions across the world.
+            </p>
+
+
+            <p>
+                The team behind us is extremely talented and has
+                more than 50 years of experience with them to
+                translate your dream wedding card into reality.
+            </p>
+
+
+            <p>
+                If you want your wedding card to be truly rare
+                and exceptional then look no further. The team
+                here is fully able to weave dreams into reality.
+            </p>
+
+
+            <p>
+
+                No matter what kind of wedding you have planned,
+
+                <a
+                    href="https://wedknotcraft.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    wedknotcraft.in
+                </a>
+
+                is well known to design various wedding
+                invitations like Hindu Wedding Cards, Muslim
+                Wedding Cards, Sikh Wedding Cards, Interface
+                Wedding Cards and so on.
+
+            </p>
+
+        </div>
+
+
+        <p class="contact-final-line">
+
+            If you have any query related to invitation designs
+            or our cards, please feel free to contact us!!!
+
+        </p>
+
+    </section>
+
+
+
+    <!-- CONTACT FOOTER -->
+
+    <footer class="wedding-footer contact-footer">
+
+        <div class="wedding-footer-inner">
+
+
+            <div class="wedding-footer-brand">
+
+                <img
+                    src="/media/images/plant_theme.png"
+                    alt="Wed Knot Craft"
+                >
+
+
+                <h3>
+                    Largest Wedding
+                    <br>
+                    Cards Collections in
+                    <br>
+                    Chennai
+                </h3>
+
+
+                <div class="social-row">
+
+                    <span>
+                        Follow us with
+                    </span>
+
+                    <span>◎</span>
+
+                    <span>f</span>
+
+                    <span>▶</span>
+
+                    <span>◉</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+
+                <a
+                    href="#about"
+                    id="contactAboutLink"
+                >
+                    About Us
+                </a>
+
+
+                <a
+                    href="#contact"
+                    id="contactFooterLink"
+                >
+                    Contact Us
+                </a>
+
+
+                <a href="#">
+                    FAQ
+                </a>
+
+
+                <p>
+                    How to order wedding
+                    invitation online?
+                </p>
+
+            </div>
+
+
+            <!-- QUICK ACCESS -->
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Quick Access
+                </h3>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#wedding">
+                    Wedding Cards
+                </a>
+
+
+                <a href="#wedding">
+                    Hindu Wedding Cards
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+
+                <p>
+                    ☎ +91 9876543210
+                </p>
+
+
+                <p>
+                    ✉ wedtype@weddingcards.com
+                </p>
+
+
+                <p>
+                    Operating hours:
+                    10.00Am to 10.00Pm
+                </p>
+
+
+                <strong>
+                    Monday – Sunday
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="wedding-copyright">
+
+            © Wed knot craft India Private Limited.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</section>
+<!-- =====================================================
+                         FAQ VIEW
+===================================================== -->
+
+<section
+    class="page-view faq-page-view"
+    id="faqView"
+>
+
+    <div class="faq-page-container">
+
+        <h1 class="faq-page-title">
+            FREQUENTLY ASKED QUESTIONS
+        </h1>
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                1. How much do Indian wedding invitation cards typically cost?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    The cost of Indian wedding cards can vary widely depending on several factors such as design complexity, materials used, customization options, and quantity ordered. Typically, Indian wedding invitations can range from affordable options to more extravagant and luxurious choices.
+                </p>
+
+                <p>
+                    For simpler and more budget-friendly options, you can find Indian wedding cards starting from around INR 10 to INR 60 per card. These cards may feature standard designs, basic printing techniques, and standard paper quality.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                2. Do you provide sample card before finalizing the order?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    We don't practise business by providing sample cards, since all the cards are manufactured against order, once the customer places the order, we go for the manufacturing process. So we don’t keep sample cards to carry.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                3. Do you provide printing services?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes, we provide the cards with printing. The text can be printed in ink, foil and by using thermographic process.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                4. How much time will it take for the complete procedure for an order?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    Once the customer approve the proof and after the confirmation of the payment, we shall start the printing process and deliver the cards in ten working days time. Then the cards can be shipped across in three to four days, which is to be door delivered.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                5. Do you provide add on cards like Rsvp, Thank you cards etc.?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    Yes, we provide full range of save the date card, Rsvp card, Thank you card, Place card, Reception card, Sangeet card, Cocktail card, Mehendi card etc.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                6. Do you provide the text samples of addon cards?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    Kindly visit the text samples link for the text samples.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                7. Could you suggest me, wordings, symbols, logos for the order?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can select appropriate text for your card with related logos and fonts as specified in the available options.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                8. How to place the order after selecting the card?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can choose a card from the hosted list and initially register with us for proceeding to the order booking. After registration, you can book the card with the quantity required and other details.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                9. Can I add up extra page / insert in the card?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    You can add extra inserts to your card. The charges for the insert and the printing charges will be additional.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="faq-item">
+
+            <div class="faq-question">
+                10. How do we pay through online?
+            </div>
+
+            <div class="faq-answer">
+
+                <p>
+                    After all your selections are finished, you can use the view cost option to view the entire selections of cards with their prices and shipping cost. Then click on the pay icon which will take you to the online payment gateway through which the payment can be done online. After confirmation of the payment only we shall start the manufacturing process.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <p class="faq-final-line">
+            If you have any query related to invitation designs or our cards, please feel free to contact us!!!
+        </p>
+
+    </div>
+
+
+
+    <!-- FAQ FOOTER -->
+
+    <footer class="wedding-footer faq-footer">
+
+        <div class="wedding-footer-inner">
+
+
+            <div class="wedding-footer-brand">
+
+                <img
+                    src="/media/images/plant_theme.png"
+                    alt="Wed Knot Craft"
+                >
+
+                <h3>
+                    Largest Wedding
+                    <br>
+                    Cards Collections in
+                    <br>
+                    Chennai
+                </h3>
+
+                <div class="social-row">
+
+                    <span>
+                        Follow us with
+                    </span>
+
+                    <span>◎</span>
+                    <span>f</span>
+                    <span>▶</span>
+                    <span>◉</span>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Information
+                </h3>
+
+
+                <a href="#about">
+                    About Us
+                </a>
+
+
+                <a href="#contact">
+                    Contact Us
+                </a>
+
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+
+                <p>
+                    How to order wedding invitation online?
+                </p>
+
+            </div>
+
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Quick Access
+                </h3>
+
+
+                <a href="#home">
+                    Home
+                </a>
+
+
+                <a href="#wedding">
+                    Wedding Cards
+                </a>
+
+
+                <a href="#wedding">
+                    Hindu Wedding Cards
+                </a>
+
+            </div>
+
+
+
+            <div class="wedding-footer-column">
+
+                <h3>
+                    Contact Us
+                </h3>
+
+
+                <p>
+                    ☎ +91 9876543210
+                </p>
+
+
+                <p>
+                    ✉ wedtype@weddingcards.com
+                </p>
+
+
+                <p>
+                    Operating hours:
+                    10.00Am to 10.00Pm
+                </p>
+
+
+                <strong>
+                    Monday – Sunday
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="wedding-copyright">
+
+            © Wed knot craft India Private Limited.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</section>
+<!-- =====================================================
+             HOW TO ORDER WEDDING INVITATION VIEW
+===================================================== -->
+
+<section class="page-view how-order-page-view" id="howOrderView">
+
+    <div class="how-order-content">
+
+        <h1>How do I order wedding cards from Wed Knot Craft online?</h1>
+
+        <p>
+            <strong>Browse the Collection:</strong>
+            Explore our collection and discover designs that match your
+            style and preferences. Use the filters to narrow your options
+            by theme, color, or card type.
+        </p>
+
+        <p>
+            <strong>Select a Design:</strong>
+            Once you find a design you like, click on it to view more
+            details. You can zoom in to examine the design closely and
+            read the description to confirm it meets your requirements.
+        </p>
+
+        <p>
+            <strong>Add to Cart:</strong>
+            Once you are happy with your design, select the quantity and
+            click the "Add to Cart" button to continue.
+        </p>
+
+        <p>
+            <strong>Review Your Order:</strong>
+            In your cart, review your order summary, including the
+            quantity, price, and any additional services you selected.
+        </p>
+
+        <p>
+            <strong>Secure Payment:</strong>
+            Wed Knot Craft offers a secure online payment system. Choose
+            your preferred payment method and enter the required details
+            to complete your transaction.
+        </p>
+
+        <p>
+            <strong>Place Your Order:</strong>
+            After confirming your payment, you will receive an order
+            confirmation email with your order details and an estimated
+            delivery date.
+        </p>
+
+    </div>
+
+
+    <!-- HOW ORDER FOOTER -->
+    <footer class="wedding-footer">
+
+        <div class="wedding-footer-inner">
+
+            <!-- BRAND -->
+            <div class="wedding-footer-brand">
+
+                <img
+                    src="/media/images/plant_theme.png"
+                    alt="Wed Knot Craft"
+                >
+
+                <h3>
+                    Largest Wedding
+                    <br>
+                    Cards Collections in
+                    <br>
+                    Chennai
+                </h3>
+
+                <div class="social-row">
+                    <span>Follow us with</span>
+                    <span>◎</span>
+                    <span>f</span>
+                    <span>▶</span>
+                    <span>◉</span>
+                </div>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+            <div class="wedding-footer-column">
+
+                <h3>Information</h3>
+
+                <a href="#about" class="about-footer-link">
+                    About Us
+                </a>
+
+                <a href="#contact">
+                    Contact Us
+                </a>
+
+                <a href="#faq">
+                    FAQ
+                </a>
+
+                <a href="#how-order" class="how-order-link">
+                    How to order wedding invitation online?
+                </a>
+
+            </div>
+
+
+            <!-- QUICK ACCESS -->
+            <div class="wedding-footer-column">
+
+                <h3>Quick Access</h3>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#wedding">
+                    Wedding Cards
+                </a>
+
+                <a href="#wedding">
+                    Hindu Wedding Cards
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="wedding-footer-column">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    ☎ +91 9876543210
+                </p>
+
+                <p>
+                    ✉ wedtype@weddingcards.com
+                </p>
+
+                <p>
+                    Operating hours:
+                    <br>
+                    10.00Am to 10.00Pm
+                </p>
+
+                <strong>
+                    Monday – Sunday
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="wedding-copyright">
+            © Wed knot craft India Private Limited.
+            All Rights Reserved.
+        </div>
+
+    </footer>
+
+</section>
+
+
+<!-- =====================================================
+                    SPECIAL OCCASIONS VIEW
+===================================================== -->
+
+<section
+    class="page-view special-page-view"
+    id="specialView"
+>
+
+
+    <div class="special-page-heading">
+
+        <p class="special-kicker">
+            CELEBRATE EVERY BEAUTIFUL MOMENT
+        </p>
+
+
+        <h1>
+            Special Occasions
+        </h1>
+
+
+        <p>
+            Discover beautiful invitation designs
+            for every celebration.
+        </p>
+
+    </div>
+
+
+
+    <!-- CATEGORY BAR -->
+
+    <div class="special-category-bar">
+
+
+        <button
+            type="button"
+            class="special-category-btn active"
+            data-special-filter="birthday"
+        >
+            Birthday
+        </button>
+
+
+        <button
+            type="button"
+            class="special-category-btn"
+            data-special-filter="puberty"
+        >
+            Puperty
+        </button>
+
+
+        <button
+            type="button"
+            class="special-category-btn"
+            data-special-filter="luxury"
+        >
+            Luxury
+        </button>
+
+
+        <button
+            type="button"
+            class="special-category-btn"
+            data-special-filter="earboring"
+        >
+            Ear Boring
+        </button>
+
+
+        <button
+            type="button"
+            class="special-category-btn"
+            data-special-filter="engagement"
+        >
+            Engagement
+        </button>
+
+
+        <button
+            type="button"
+            class="special-category-btn"
+            data-special-filter="housewarming"
+        >
+            House Warming
+        </button>
+
+
+        <button
+            type="button"
+            class="special-category-btn"
+            data-special-filter="anniversary"
+        >
+            Anniversary
+        </button>
+
+    </div>
+
+
+
+    <!-- SELECTED TITLE -->
+
+    <div class="selected-special-title">
+
+        <h2 id="specialTitle">
+            Birthday Invitations
+        </h2>
+
+
+        <p id="specialSubtitle">
+            Beautiful birthday invitations
+            to make your celebration memorable.
+        </p>
+
+    </div>
+
+
+
+    <!-- SPECIAL CARDS -->
+
+    <div
+        class="special-card-grid"
+        id="specialCardGrid"
+    >
+
+
+        <article
+            class="special-card"
+            data-special-category="birthday"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/yellow.png"
+                    alt="Birthday Invitation"
+                >
+
+                <span>
+                    Birthday
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Elegant Birthday Invitation
+                </h3>
+
+
+                <p>
+                    Modern and colourful birthday design
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="birthday"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/tumblr.png"
+                    alt="Birthday Invitation"
+                >
+
+                <span>
+                    Birthday
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Classic Birthday Collection
+                </h3>
+
+
+                <p>
+                    Beautiful invitation for special moments
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="puberty"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/flower.png"
+                    alt="Puperty Invitation"
+                >
+
+                <span>
+                    Puperty
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Floral Puperty Invitation
+                </h3>
+
+
+                <p>
+                    Soft floral celebration invitation
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="puberty"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/simple.png"
+                    alt="Puperty Card"
+                >
+
+                <span>
+                    Puperty
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Simple Puperty Card
+                </h3>
+
+
+                <p>
+                    Minimal and elegant celebration card
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="luxury"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Elegant_Vintage.png"
+                    alt="Luxury Invitation"
+                >
+
+                <span>
+                    Luxury
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Elegant Luxury Invitation
+                </h3>
+
+
+                <p>
+                    Premium design for grand occasions
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="luxury"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Royal_Wedding.png"
+                    alt="Royal Luxury Invitation"
+                >
+
+                <span>
+                    Luxury
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Royal Luxury Collection
+                </h3>
+
+
+                <p>
+                    Rich and sophisticated invitation design
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="earboring"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Gold_Plated.png"
+                    alt="Ear Boring Invitation"
+                >
+
+                <span>
+                    Ear Boring
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Traditional Ear Boring Card
+                </h3>
+
+
+                <p>
+                    Elegant traditional ceremony invitation
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="earboring"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Golden_Ornament.png"
+                    alt="Ear Boring Card"
+                >
+
+                <span>
+                    Ear Boring
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Golden Ceremony Invitation
+                </h3>
+
+
+                <p>
+                    Traditional gold inspired invitation
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="engagement"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/engaement.png"
+                    alt="Engagement Invitation"
+                >
+
+                <span>
+                    Engagement
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Elegant Engagement Invitation
+                </h3>
+
+
+                <p>
+                    Romantic invitation for your engagement
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="engagement"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Evite_Paperless.png"
+                    alt="Modern Engagement Invite"
+                >
+
+                <span>
+                    Engagement
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Modern Engagement Invite
+                </h3>
+
+
+                <p>
+                    Stylish invitation for a beautiful event
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="housewarming"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Ganesha_Invitation.png"
+                    alt="Ganesha House Warming"
+                >
+
+                <span>
+                    House Warming
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Ganesha House Warming
+                </h3>
+
+
+                <p>
+                    Auspicious invitation for your new home
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="housewarming"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Interior_Space.png"
+                    alt="Modern House Warming Invite"
+                >
+
+                <span>
+                    House Warming
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Modern House Warming Invite
+                </h3>
+
+
+                <p>
+                    Beautiful invitation for your new beginning
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="anniversary"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Design_-_Playground.png"
+                    alt="Anniversary Invite"
+                >
+
+                <span>
+                    Anniversary
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Elegant Anniversary Invite
+                </h3>
+
+
+                <p>
+                    Celebrate years of love and memories
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <article
+            class="special-card"
+            data-special-category="anniversary"
+        >
+
+            <div class="special-image">
+
+                <img
+                    src="/media/images/Three_Dimension.png"
+                    alt="Premium Anniversary Card"
+                >
+
+                <span>
+                    Anniversary
+                </span>
+
+            </div>
+
+
+            <div class="special-card-info">
+
+                <h3>
+                    Premium Anniversary Card
+                </h3>
+
+
+                <p>
+                    Sophisticated design for a memorable day
+                </p>
+
+
+                <button
+                    type="button"
+                    class="view-special-btn"
+                >
+                    View Design
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+                         LOGIN VIEW
+===================================================== -->
+
+<section
+    class="page-view utility-view"
+    id="loginView"
+>
+
+
+    <div class="login-view-card">
+
+
+        <div class="login-tabs">
+
+            <button
+                type="button"
+                class="login-tab active"
+                id="viewLoginTab"
+            >
+                Login
+            </button>
+
+
+            <button
+                type="button"
+                class="login-tab"
+                id="viewSignupTab"
+            >
+                Sign Up
+            </button>
+
+        </div>
+
+
+
+        <!-- LOGIN FORM -->
+
+        <form
+            class="login-form"
+            id="viewLoginForm"
+        >
+
+            <h2>
+                Login to my Account
+            </h2>
+
+
+            <label>
+                Email
+            </label>
+
+
+            <input
+                type="email"
+                id="loginEmail"
+                placeholder="Enter email"
+            >
+
+
+            <label>
+                Password
+            </label>
+
+
+            <input
+                type="password"
+                id="loginPassword"
+                placeholder="Enter password"
+            >
+
+
+            <button
+                type="submit"
+                class="login-submit"
+                id="loginSubmit"
+            >
+                Login
+            </button>
+
+
+            <a
+                href="#"
+                id="forgotPassword"
+            >
+                Forgot Password
+            </a>
+
+
+            <div
+                class="success-message"
+                id="loginSuccess"
+            ></div>
+
+        </form>
+
+
+
+        <!-- SIGNUP FORM -->
+
+        <form
+            class="login-form hidden"
+            id="viewSignupForm"
+        >
+
+            <h2>
+                Create Account
+            </h2>
+
+
+            <label>
+                Name
+            </label>
+
+
+            <input
+                type="text"
+                id="signupName"
+                placeholder="Enter name"
+            >
+
+
+            <label>
+                Email
+            </label>
+
+
+            <input
+                type="email"
+                id="signupEmail"
+                placeholder="Enter email"
+            >
+
+
+            <label>
+                Password
+            </label>
+
+
+            <input
+                type="password"
+                id="signupPassword"
+                placeholder="Create password"
+            >
+
+
+            <button
+                type="submit"
+                class="login-submit"
+                id="signupSubmit"
+            >
+                Sign Up
+            </button>
+
+
+            <div
+                class="success-message"
+                id="signupSuccess"
+            ></div>
+
+        </form>
+
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+                       WISHLIST VIEW
+===================================================== -->
+
+<section
+    class="page-view utility-view"
+    id="wishlistView"
+>
+
+
+    <div class="wishlist-page">
+
+        <h1>
+            Wishlist
+        </h1>
+
+
+        <p class="wishlist-subtitle">
+            Your favourite invitation cards
+        </p>
+
+
+        <div
+            class="wishlist-grid"
+            id="wishlistGrid"
+        ></div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+                         SEARCH VIEW
+===================================================== -->
+
+<section
+    class="page-view search-page-view"
+    id="searchView"
+>
+
+
+    <div class="search-page-inner">
+
+
+        <div class="search-page-heading">
+
+            <p class="search-small-label">
+                FIND YOUR PERFECT INVITATION
+            </p>
+
+
+            <h1>
+                Everything You Need,
+                <span>
+                    to Plan your Dream Wedding
+                </span>
+            </h1>
+
+
+            <p>
+                Discover beautiful invitation designs
+                for your special day.
+            </p>
+
+        </div>
+
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="search-page-bar">
+
+
+            <button
+                type="button"
+                class="search-filter"
+            >
+                All
+            </button>
+
+
+            <input
+                type="search"
+                id="searchPageInput"
+                placeholder="Search wedding cards..."
+            >
+
+
+            <button
+                type="button"
+                id="searchPageButton"
+            >
+                Search
+            </button>
+
+        </div>
+
+
+
+        <!-- CHIPS -->
+
+        <div class="search-chips">
+
+            <button
+                type="button"
+                class="search-chip active"
+            >
+                Wedding
+            </button>
+
+
+            <button
+                type="button"
+                class="search-chip"
+            >
+                Floral
+            </button>
+
+
+            <button
+                type="button"
+                class="search-chip"
+            >
+                Luxury
+            </button>
+
+
+            <button
+                type="button"
+                class="search-chip"
+            >
+                Scroll
+            </button>
+
+
+            <button
+                type="button"
+                class="search-chip"
+            >
+                Theme
+            </button>
+
+        </div>
+
+
+
+        <!-- IDEAS -->
+
+        <div class="search-category">
+
+
+            <div class="search-category-title">
+
+                <h2>
+                    Ideas for you
+                </h2>
+
+                <span>
+                    Explore our beautiful invitation styles
+                </span>
+
+            </div>
+
+
+            <div class="search-card-grid">
+
+
+                <article
+                    class="search-card"
+                    data-search-name="hindu wedding card"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Elegant_Hindu.png"
+                            alt="Hindu Wedding Card"
+                        >
+
+                        <span class="image-badge">
+                            Hindu
+                        </span>
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Hindu Wedding Card
+                        </h3>
+
+                        <p>
+                            Elegant traditional design
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="floral wedding card"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/BC_1152_Floral.png"
+                            alt="Floral Wedding Card"
+                        >
+
+                        <span class="image-badge">
+                            Floral
+                        </span>
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Floral Wedding Card
+                        </h3>
+
+                        <p>
+                            Soft floral wedding collection
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="luxury wedding card"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Elegant_Kerala.png"
+                            alt="Luxury Wedding Card"
+                        >
+
+                        <span class="image-badge">
+                            Luxury
+                        </span>
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Luxury Wedding Card
+                        </h3>
+
+                        <p>
+                            Premium elegant invitation
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="scroll wedding card"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/brown.png"
+                            alt="Scroll Wedding Card"
+                        >
+
+                        <span class="image-badge">
+                            Scroll
+                        </span>
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Scroll Wedding Card
+                        </h3>
+
+                        <p>
+                            Classic traditional scroll design
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="dark green theme"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Dark_green.png"
+                            alt="Dark Green Theme"
+                        >
+
+                        <span class="image-badge">
+                            Theme
+                        </span>
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Dark Green Theme
+                        </h3>
+
+                        <p>
+                            Modern luxury theme invitation
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="indian wedding card"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Editable_Indian.png"
+                            alt="Indian Wedding Card"
+                        >
+
+                        <span class="image-badge">
+                            Indian
+                        </span>
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Indian Wedding Card
+                        </h3>
+
+                        <p>
+                            Beautiful Indian wedding design
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- POPULAR -->
+
+        <div class="search-category popular-search-category">
+
+            <div class="search-category-title">
+
+                <h2>
+                    Popular on this
+                </h2>
+
+                <span>
+                    Trending invitation designs
+                </span>
+
+            </div>
+
+
+            <div class="search-card-grid">
+
+
+                <article
+                    class="search-card"
+                    data-search-name="red wedding invitation"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Doli_Themed.png"
+                            alt="Red Wedding Invitation"
+                        >
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Red Wedding Invitation
+                        </h3>
+
+                        <p>
+                            Rich traditional wedding design
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="beach wedding invitation"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Beach_Wedding.png"
+                            alt="Beach Wedding Invitation"
+                        >
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Beach Wedding Invitation
+                        </h3>
+
+                        <p>
+                            Fresh destination wedding design
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="elegant floral theme"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Elegant_Flora.png"
+                            alt="Elegant Floral Theme"
+                        >
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Elegant Floral Theme
+                        </h3>
+
+                        <p>
+                            Romantic floral invitation
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="traditional wedding card"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Astound_1.jpg"
+                            alt="Traditional Wedding Card"
+                        >
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Traditional Wedding Card
+                        </h3>
+
+                        <p>
+                            Timeless wedding invitation
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="elegant green wedding"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Elegant_Flora.png"
+                            alt="Elegant Green Wedding"
+                        >
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Elegant Green Wedding
+                        </h3>
+
+                        <p>
+                            Romantic premium collection
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article
+                    class="search-card"
+                    data-search-name="premium wedding card"
+                >
+
+                    <div class="search-image-box">
+
+                        <img
+                            src="/media/images/Digital_Indian_Hin.png"
+                            alt="Premium Wedding Card"
+                        >
+
+                    </div>
+
+
+                    <div class="search-card-content">
+
+                        <h3>
+                            Premium Wedding Card
+                        </h3>
+
+                        <p>
+                            Premium celebration invitation
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NO RESULT -->
+
+        <div
+            class="search-no-result"
+            id="searchNoResult"
+        >
+
+            <div class="no-result-icon">
+                ♡
+            </div>
+
+
+            <h3>
+                No matching cards found
+            </h3>
+
+
+            <p>
+                Try another wedding card or category.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+</main>
+
+
+
+
+<!-- =====================================================
+                         CART
+===================================================== -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
+
+    <div class="cart-window">
+
+
+        <button
+            type="button"
+            class="cart-close"
+            id="cartClose"
+        >
+            ×
+        </button>
+
+
+
+        <div class="cart-table-head">
+
+            <span>
+                Product
+            </span>
+
+            <span>
+                Qty
+            </span>
+
+            <span>
+                Unit Price
+            </span>
+
+            <span>
+                Tax
+            </span>
+
+            <span>
+                Price
+            </span>
+
+        </div>
+
+
+
+        <div
+            class="cart-rows"
+            id="cartRows"
+        ></div>
+
+
+
+        <div class="cart-summary">
+
+
+            <div>
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="subtotal">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Tax
+                </span>
+
+                <strong id="totalTax">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Total
+                </span>
+
+                <strong id="grandTotal">
+                    ₹0.00
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="checkout-note">
+
+            Minimum order quantity:
+            100 cards
+
+        </div>
+
+
+
+        <div class="cart-buttons">
+
+            <button
+                type="button"
+                class="continue-btn"
+                id="continueShopping"
+            >
+                Continue Shopping
+            </button>
+
+
+            <button
+                type="button"
+                class="checkout-btn"
+                id="checkoutButton"
+            >
+                Checkout
+            </button>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+                         JAVASCRIPT
+===================================================== -->
+
+<script
+    src="{% static 'home/js/script.js' %}"
+></script>
+
+
+</body>
+</html>
