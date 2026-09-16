@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-bbl22z=vbqf9tt)$b#6u@&m99i9yfjkna1+(1%dz!b&p=18f51
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1",
+    "localhost",
+    "wedding-invitation-ylr7.onrender.com",]
 
 
 # Application definition
