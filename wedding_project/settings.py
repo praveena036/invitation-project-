@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1",
     "localhost",
-    "wedding-invitation-ylr7.onrender.com",]
+    "wedding-invitation-y1r7.onrender.com",]
 
 
 # Application definition
